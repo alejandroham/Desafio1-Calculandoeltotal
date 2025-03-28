@@ -1,0 +1,56 @@
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 100px;
+}
+.grid-container {
+  display: grid;
+  width: 100vh;
+  grid-template-areas:
+    "menu seccion-principal"
+    "menu seccion-principal"
+    "pie-de-pagina seccion-principal";
+  grid-template-columns: 2fr 8fr;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+}
+
+/*Card proyecto grid*/
+.card {
+  background: #779933; /* Cambiado a un color de fondo que combine */
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  font-family: roboto;
+  color: white;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 10px;
+}
+.card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.card button {
+  background-color: #ff9800; /* Cambiado a naranja */
+  border: 1px solid black;
+  color: white;
+  font-size: 25px;
+  margin: 5px 0px 0px 0px;
+  border-radius: 5px;
+}
+.card button:hover {
+  background-color: #e22b0a; /* Cambiado a verde cuando se pone encima el cursor */
+}

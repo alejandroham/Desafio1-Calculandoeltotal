@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a Js</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <h1>Mini Tiendita</h1>
+
+
+    <div class="grid">
+        <div class="card">
+            <img src="./assets/img/RTX4060-GIGABYTE.png" alt="ROBOT 1">
+            <h2>Tarjeta de Video </h2>
+            <p>GeFoce RTX 4060</p>
+            <p> Precio Base:$ <span id="price"></span></p>
+            <h2>Cantidad: <span id="p-1"> 0 </span>
+                <button onclick="
+            parrafo = document.querySelector('#p-1')
+            cuenta = Number(parrafo.innerHTML)
+            cuenta = cuenta + 1
+            parrafo.innerHTML = cuenta
+           
+            /*Valor a Pagar*/
+            valor = document.querySelector('.valorAPagar')
+            calculo = Number(valor.innerHTML)
+            calculo = precio * cuenta
+            valor.innerHTML = calculo
+
+            "> + </button>
+                <button onclick="
+             parrafo = document.querySelector('#p-1')
+             cuenta = Number(parrafo.innerHTML)
+             cuenta = cuenta - 1
+             parrafo.innerHTML = cuenta
+
+             /*Valor a Pagar*/
+            valor = document.querySelector('.valorAPagar')
+            calculo = Number(valor.innerHTML)
+            calculo = precio * cuenta
+            valor.innerHTML = calculo
+
+             "> - </button>
+            </h2>
+        </div>
+
+
+        <H1>Total a pagar: $<span class="valorAPagar">0</span>
+
+    </div>
+
+    <script>
+        let precio = 500000 // Definir la variable
+        document.getElementById("price").textContent = precio;
+
+
+    </script>
+</body>
+
+</html>
